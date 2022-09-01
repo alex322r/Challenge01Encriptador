@@ -3,7 +3,7 @@
   font-family: 'Source Code Pro', monospace;
   margin: 0;
   padding:0;
-  border: black solid 0.1px;
+  
  
 }
 body{
@@ -51,6 +51,7 @@ p{
   border: none;
   outline: none;
   margin:auto;
+  border-radius: 4px;
   
 }
 .aviso {
@@ -118,6 +119,8 @@ footer{
 }
 @media screen and (max-width:480px){
   .rigth-encript{
+    
+    width: auto;
     position: static;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -131,13 +134,15 @@ footer{
     border:black solid 1px;
     
   }
-  left-encript{
-    width: fit-content;
+  .left-encript{
+    width: auto;
     
     
     
   }
-  txt-encriptar{
-    
+  .txt-encriptar{
+    width: 80%
   }
+
+
 }
