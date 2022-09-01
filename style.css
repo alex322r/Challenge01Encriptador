@@ -9,11 +9,14 @@
 body{
   background: #5c4b7a;
 }
+
 header{
+  height: 150px;
   
 }
 main {
-
+  
+ 
   
 }
 img{
@@ -26,6 +29,7 @@ h1{
   width: fit-content;
   margin: 0px auto 20px auto;
   color:white;
+  font-size: 3em;
   
 }
 p{
@@ -35,7 +39,7 @@ p{
 
 .left-encript {
   
-  width: 640px;
+  width: 900px;
   
   
   
@@ -46,17 +50,18 @@ p{
   display: block;
   background: #292b36;
   color: white;
-  width: 50%;
-  height:250px;
+  width: 75%;
+  height:450px;
   border: none;
   outline: none;
   margin:auto;
   border-radius: 4px;
+  font-size: 2em;
   
 }
 .aviso {
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
   margin:10px;
   
 }
@@ -67,12 +72,13 @@ p{
   gap: 20px;
 }
 .botones {
-  width:150px;
-  height: 3em;
+  width:200px;
+  height: 55px;
   background: #292b36;
   color: white;
   border:none;
   border-radius: 4px;
+  font-size: 25px;
   font-weight: bold;
 }
 .botones:active{
@@ -81,11 +87,11 @@ p{
 }
 
 .rigth-encript {
-  width: 300px;
+  width: 560px;
   
   position: relative;
-  top:-330px;
-  left: 640px;
+  top:-555px;
+  left: 900px;
   
   
   
@@ -97,15 +103,20 @@ p{
   text-align: center;
 }
 .mensaje {
+  width: 425px;
+  height: 350px;
   background: url("imagenes/muñeco.png");
   background-size: contain;
   color: white;
   border: none;
   outline: none;
+  font-size: 25px;
+  
   
 }
 .mensaje-aviso  {
   margin:20px;
+  font-size: 25px;
 }
 .copiar {
   
@@ -113,9 +124,13 @@ p{
 }
 
 footer{
+  
+  
+  
   background: black;
   color:white;
   text-align: center;
+  
 }
 @media screen and (max-width:480px){
   .rigth-encript{
