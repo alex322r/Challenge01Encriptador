@@ -9,6 +9,7 @@
 }
 body{
   background: #5c4b7a;
+  
 }
 
 header{
@@ -16,7 +17,8 @@ header{
   
 }
 main {
-  
+ width: 940px;
+ margin-left: 120px; 
  
   
 }
@@ -83,7 +85,7 @@ p{
   font-weight: bold;
 }
 .botones:active{
-    background: white;
+  background: white;
   color:#5c4b7a;
 }
 
