@@ -10,6 +10,7 @@
 body{
   background: #5c4b7a;
   
+  
 }
 
 header{
@@ -17,11 +18,9 @@ header{
   
 }
 main {
- 
- 
- 
- 
   
+  display: flex;
+  margin-left: 80px;  
 }
 img{
   position:relative;
@@ -84,18 +83,10 @@ p{
 }
 
 .rigth-encript {
-  width: 300px;
-  
-  position: relative;
-  top:-345px;
-  left:640px;
-  
-  
+  width: 300px; 
   
 }
 .desc-box {
-  
-  
   
   text-align: center;
 }
@@ -115,22 +106,19 @@ p{
   margin:20px;
   font-size: 20px;
 }
-.copiar {
+#copiar {
+  display: none;
   
   
 }
 
-footer{
-  
-  
-  
-  background: black;
-  color:white;
-  text-align: center;
- 
-  
-}
+
 @media screen and (max-width:480px){
+  main{
+    margin: auto;
+    display: block ;
+  }
+  
   .rigth-encript{
     
     width: auto;
