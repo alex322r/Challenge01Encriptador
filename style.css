@@ -89,6 +89,8 @@ p{
 .desc-box {
   
   text-align: center;
+  width: fit-content;
+  
 }
 .txt-mensaje {
   width: 325px;
@@ -99,6 +101,7 @@ p{
   border: none;
   outline: none;
   font-size: 25px;
+  border-radius: 4px;
   
   
 }
@@ -106,12 +109,12 @@ p{
   margin:20px;
   font-size: 20px;
 }
-#mensaje-aviso{
-  display: none;
-}
+
+
 #btn-copiar{
+  width: 250px;
   display: none;
-  margin: auto;
+  margin: 20px auto 0px auto;
 
 }
 
@@ -147,6 +150,9 @@ p{
   .txt-encriptar{
     width: 80%
   }
-
+  .desc-box{
+    width: 80%;
+    margin: auto;
+  }
 
 }

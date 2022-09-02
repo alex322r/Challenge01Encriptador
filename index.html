@@ -21,11 +21,11 @@
   </header>
   <main>
     <section class="left-encript">
-      <textarea class="txt-encriptar" placeholder="Escriba el texto a encriptar"></textarea>
+      <textarea onkeypress="return blockSpecialChar(event)" class="txt-encriptar" placeholder="Escriba el texto a encriptar"></textarea>
       <p class="aviso">No se permiten caracteres especiales ni mayusculas</p>
       <div class="btn-encriptar-y-desencriptar">
         <button onclick="btnEncriptar()" class="botones">Encriptar</button>
-        <button class="botones">Desencriptar</button>
+        <button onclick="btnDesencriptar()" class="botones">Desencriptar</button>
       
         
       
@@ -38,7 +38,7 @@
         <textarea name="" class="txt-mensaje" ></textarea>
         <div id="mensaje-aviso"><p>Ningun texto fue encontrado</p>
         <p>Ingrese un texto para encriptar</p></div>
-        <button onclick="btnEncriptar()" class="botones" id="btn-copiar">Copiar</button>
+        <button onclick="copiar()" class="botones" id="btn-copiar">Copiar</button>
         
         
       

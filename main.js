@@ -4,13 +4,31 @@ const aviso = document.querySelector("#mensaje-aviso");
 const btnCopiar = document.querySelector("#btn-copiar");
 
 
+function blockSpecialChar(event){
+    if(!((event.keyCode >= 65) && (event.keyCode <= 90) || (event.keyCode >= 97) && (event.keyCode <= 122) || (event.keyCode >= 48) && (event.keyCode <= 57))){
+       event.returnValue = false;
+       alert("No se permiten caracteres especiales")
+       return;
+    }
+    event.returnValue = true;
+
+}
+
+
+
+
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTxt.value);
-    mensaje.value = textoEncriptado;
-    mensaje.style.background="#292b36";
-    inputTxt.value = "";
-    btnCopiar.style.display = "block";
-    aviso.style.display = "none";
+    if (textoEncriptado ) {
+
+        mensaje.value = textoEncriptado;
+        mensaje.style.background="#292b36";
+        inputTxt.value = "";
+        btnCopiar.style.display = "block";
+        aviso.style.display = "none";
+        
+    }
+    
 
 }
 
@@ -30,9 +48,12 @@ function encriptar(stringEncriptada) {
 
 
 function btnDesencriptar() {
-    const textoEncriptado = desencriptar(inputTexto.value)
-    mensaje.value = textoEncriptado
-    inputTexto.value = ""  
+    const textoEncriptado = desencriptar(inputTxt.value);
+    mensaje.value = textoEncriptado;
+    mensaje.style.background="#292b36";
+    inputTxt.value = "" 
+    btnCopiar.style.display = "block"; 
+    aviso.style.display = "none";
 }
 
 function desencriptar(stringDesencriptada) {
@@ -51,3 +72,11 @@ function desencriptar(stringDesencriptada) {
 
 //botón copiar
 
+function copiar() {
+    
+    mensaje.select();
+    document.execCommand("copy");
+    mensaje.value ="";
+    
+    alert("Texto Copiado");
+}
