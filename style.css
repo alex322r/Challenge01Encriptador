@@ -106,10 +106,13 @@ p{
   margin:20px;
   font-size: 20px;
 }
-#copiar {
+#mensaje-aviso{
   display: none;
-  
-  
+}
+#btn-copiar{
+  display: none;
+  margin: auto;
+
 }
 
 
