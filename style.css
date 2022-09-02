@@ -24,7 +24,7 @@ main {
 }
 img{
   position:relative;
-  top:48px;
+  top:25px;
   
 }
 
@@ -128,7 +128,7 @@ p{
   }
   img{
     position:relative;
-    top:0px;
+    top:30px;
   }
   h1{
     display:inline;
